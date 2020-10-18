@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RecycleViewActivity">
+
+        </activity>
+        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,10 +23,6 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".ListActivity"></activity>
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity"></activity>
 
         <meta-data
