@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -85,5 +87,17 @@ public class HomeActivity extends AppCompatActivity {
             loadFragment(getFragment(integerDeque.peek()));
         else
             finish();
+    }
+
+    public void logOut(View view) {
+        Intent intent  = new Intent(HomeActivity.this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void openProfile(View view) {
+        Intent intent  = new Intent(HomeActivity.this, ListActivity.class);
+        startActivity(intent);
+
     }
 }

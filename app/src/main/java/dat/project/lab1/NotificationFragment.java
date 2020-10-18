@@ -76,8 +76,8 @@ public class NotificationFragment extends Fragment implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnLogOut:
-                Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+                //startActivity(intent);
                 break;
         }
 
